@@ -31,24 +31,30 @@ The training of ML algorithms is usually supervised. Given a dataset consisting 
 
 # Code
 ```bash
-git clone https://github.com/vigneashpandiyan/Additive-Manufacturing-Self-Supervised-Learning-Coaxial-DED_Process-Zone-Imaging
-cd Additive-Manufacturing-Self-Supervised-Learning-Coaxial-DED_Process-Zone-Imaging
-python Transformer_Byol.py
-python Main_Byol.py
-python Main_CNN.py
-python Main_Transformer.py
+git clone https://github.com/vigneashpandiyan/Tribology-Classification-of-wear-in-human-joints
+
+cd  Tribology-Classification-of-wear-in-human-joints
+python  ..../Manual feature extraction/Main Features.py
+python  ..../Contrastive learner [Circle loss]/Main_Circle.py
+python ..../Classification/Main Classification.py
+python ..../Classification/Contrastive Classification.py
 ```
 
 # Citation
 ```
-@article{,
-  title={Real-time monitoring and quality assurance for laser-based directed energy deposition: integrating co-axial imaging and self-supervised deep learning framework},
-  author={Vigneashwara Pandiyan, Di Cui, Roland Axel Richter, Annapaola Parrilli and Marc Leparoux.},
-  journal={Journal of Intelligent Manufacturing},
-  ISSN={1572-8145},
-  DOI={10.1007/s10845-023-02279-x},
-  Date={2023/12/21},
-  year={2023},
-  publisher={Springer}
+
+@Article{lubricants12020047,
+AUTHOR = {Deshpande, Pushkar and Wasmer, Kilian and Imwinkelried, Thomas and Heuberger, Roman and Dreyer, Michael and Weisse, Bernhard and Crockett, Rowena and Pandiyan, Vigneashwara},
+TITLE = {Classification of Progressive Wear on a Multi-Directional Pin-on-Disc Tribometer Simulating Conditions in Human Joints-UHMWPE against CoCrMo Using Acoustic Emission and Machine Learning},
+JOURNAL = {Lubricants},
+VOLUME = {12},
+YEAR = {2024},
+NUMBER = {2},
+ARTICLE-NUMBER = {47},
+URL = {https://www.mdpi.com/2075-4442/12/2/47},
+ISSN = {2075-4442},
+ABSTRACT = {Human joint prostheses experience wear failure due to the complex interactions between Ultra-High-Molecular-Weight Polyethylene (UHMWPE) and Cobalt-Chromium-Molybdenum (CoCrMo). This study uses the wear classification to investigate the gradual and progressive abrasive wear mechanisms in UHMWPE. Pin-on-disc tests were conducted under simulated in vivo conditions, monitoring wear using Acoustic Emission (AE). Two Machine Learning (ML) frameworks were employed for wear classification: manual feature extraction with ML classifiers and a contrastive learning-based Convolutional Neural Network (CNN) with ML classifiers. The CNN-based feature extraction approach achieved superior classification performance (94% to 96%) compared to manual feature extraction (81% to 89%). The ML techniques enable accurate wear classification, aiding in understanding surface states and early failure detection. Real-time monitoring using AE sensors shows promise for interventions and improving prosthetic joint design.},
+DOI = {10.3390/lubricants12020047}
 }
+
 ```
