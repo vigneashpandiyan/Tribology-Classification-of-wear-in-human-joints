@@ -1,30 +1,16 @@
-# Additive-Manufacturing-Self-Supervised-Learning-Coaxial-DED_Process-Zone-Imaging
-Real-Time Monitoring and Quality Assurance for Laser-Based Directed Energy Deposition: Integrating Coaxial Imaging and Self-Supervised Deep Learning Framework
+# Tribology-Classification-of-wear-in-human-joints
+Classification of Progressive Wear on a Multi-Directional Pin-on-Disc Tribometer Simulating Conditions in Human Joints-UHMWPE against CoCrMo Using Acoustic Emission and Machine Learning
 
 ![DED process zone information](https://github.com/vigneashpandiyan/Additive-Manufacturing-Self-Supervised-Learning-Coaxial-DED-Process-Zone-Imaging/assets/39007209/5b899596-ade5-40dc-bf44-ff77896544bc)
 
 # Journal link
 
-[10.1007/s10845-023-02279-x](https://link.springer.com/article/10.1007/s10845-023-02279-x)
+[10.3390/lubricants12020047](https://www.mdpi.com/2075-4442/12/2/47)
 
 # Overview
 
 
-Artificial Intelligence (AI) has emerged as a promising solution for real-time monitoring of the quality of
-additively manufactured (AM) metallic parts. This study focuses on the Laser-based Directed Energy Deposition (LDED)
-process and utilizes embedded vision systems to capture critical melt pool characteristics for continuous
-monitoring. Two self-learning frameworks based on Convolutional Neural Networks and Transformer architecture
-are applied to process zone images from different DED process regimes, enabling in-situ monitoring without ground
-truth information. The evaluation is based on a dataset of process zone images obtained during the deposition of
-titanium powder (Cp-Ti, grade 1), forming a cube geometry using four laser regimes. By training and evaluating the
-Deep Learning (DL) algorithms using a co-axially mounted CCD camera within the process zone, the down-sampled
-representations of process zone images are effectively used with conventional classifiers for L-DED process
-monitoring. The high classification accuracies achieved validate the feasibility and efficacy of self-learning strategies
-in real-time quality assessment of AM. This study highlights the potential of AI-based monitoring systems and selflearning
-algorithms in quantifying the quality of AM metallic parts during fabrication. The integration of embedded
-vision systems and self-learning algorithms presents a novel contribution, particularly in the context of the L-DED
-process. The findings open avenues for further research and development in AM process monitoring, emphasizing the
-importance of self-supervised in-situ monitoring techniques in ensuring part quality during fabrication.
+Human joint prostheses experience wear failure due to the complex interactions between Ultra-High-Molecular-Weight Polyethylene (UHMWPE) and Cobalt-Chromium-Molybdenum (CoCrMo). This study uses the wear classification to investigate the gradual and progressive abrasive wear mechanisms in UHMWPE. Pin-on-disc tests were conducted under simulated in vivo conditions, monitoring wear using Acoustic Emission (AE). Two Machine Learning (ML) frameworks were employed for wear classification: manual feature extraction with ML classifiers and a contrastive learning-based Convolutional Neural Network (CNN) with ML classifiers. The CNN-based feature extraction approach achieved superior classification performance (94% to 96%) compared to manual feature extraction (81% to 89%). The ML techniques enable accurate wear classification, aiding in understanding surface states and early failure detection. Real-time monitoring using AE sensors shows promise for interventions and improving prosthetic joint design.
 
 ![Graphical abstract(1)](https://github.com/vigneashpandiyan/Additive-Manufacturing-Self-Supervised-Learning-Coaxial-DED-Process-Zone-Imaging/assets/39007209/0ee15026-dde5-4176-a036-26707a9ada11)
 
