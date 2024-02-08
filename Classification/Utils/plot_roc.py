@@ -1,5 +1,22 @@
-#https://scikit-learn.org/stable/auto_examples/model_selection/plot_roc.html#sphx-glr-auto-examples-model-selection-plot-roc-py
-#https://scikit-learn.org/stable/auto_examples/model_selection/plot_precision_recall.html
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Feb  7 21:57:22 2024
+
+@author: srpv
+contact: vigneashwara.solairajapandiyan@empa.ch
+
+
+The codes in this following script will be used for the publication of the following work
+
+"Classification of Progressive Wear on a Multi-Directional Pin-on-Disc 
+Tribometer Simulating Conditions in Human Joints-UHMWPE against CoCrMo 
+Using Acoustic Emission and Machine Learning"
+
+@any reuse of this code should be authorized by the first owner, code author
+"""
+
+# %%
+# Libraries to import
 import numpy as np
 import matplotlib.pyplot as plt
 from itertools import cycle
@@ -16,29 +33,26 @@ from sklearn.metrics import precision_recall_curve
 from sklearn.metrics import average_precision_score
 
 
-def plot_roc(model,Featurespace,classspace,classes,Title1,Title2):
-    
-    
+def plot_roc(model, Featurespace, classspace, classes, Title1, Title2):
+
     # Binarize the output
     classspace = label_binarize(classspace, classes=classes)
     n_classes = classspace.shape[1]
-    
+
     # Add noisy features to make the problem harder
     random_state = np.random.RandomState(66)
     #n_samples, n_features = Featurespace.shape
-    
-    
+
     # shuffle and split training and test sets
     X_train, X_test, y_train, y_test = train_test_split(Featurespace, classspace, test_size=.25,
                                                         random_state=random_state)
-    
-    
+
     #y_score = model.decision_function(X_test)
     y_score = model.predict_proba(X_test)
-    
-    #print(y_score)
-    #print(y_test)
-    
+
+    # print(y_score)
+    # print(y_test)
+
     # Compute ROC curve and ROC area for each class
     fpr = dict()
     tpr = dict()
@@ -46,21 +60,20 @@ def plot_roc(model,Featurespace,classspace,classes,Title1,Title2):
     prec = dict()
     recall = dict()
     average_precision = dict()
-    
+
     for i in range(n_classes):
         fpr[i], tpr[i], _ = roc_curve(y_test[:, i], y_score[:, i])
         roc_auc[i] = auc(fpr[i], tpr[i])
-        
+
         prec[i], recall[i], _ = precision_recall_curve(y_test[:, i], y_score[:, i])
         average_precision[i] = average_precision_score(y_test[:, i], y_score[:, i])
-   
+
     lw = 2
-    
- 
+
     # Plot all ROC curves
-    
-    plt.figure(figsize = (8, 6),dpi=400)
-    colors = cycle(['red', 'darkorange', 'green','blue','yellow','purple','brown','orange'])
+
+    plt.figure(figsize=(8, 6), dpi=400)
+    colors = cycle(['red', 'darkorange', 'green', 'blue', 'yellow', 'purple', 'brown', 'orange'])
     for i, color in zip(range(n_classes), colors):
         plt.plot(fpr[i], tpr[i], color=color, lw=lw,
                  label='ROC curve of class {0} (area = {1:0.2f})'
@@ -73,13 +86,13 @@ def plot_roc(model,Featurespace,classspace,classes,Title1,Title2):
     plt.ylabel('True Positive Rate')
     plt.title('Receiver operating characteristic to multi-class')
     plt.legend(loc="lower right")
-    plt.savefig(Title1,bbox_inches='tight',dpi=400)
+    plt.savefig(Title1, bbox_inches='tight', dpi=400)
     plt.show()
-    
+
     # Plot all Precision-recall curves
-    
-    plt.figure(figsize = (8, 6),dpi=400)
-    colors = cycle(['red', 'darkorange', 'green','blue','yellow','purple','brown','orange'])
+
+    plt.figure(figsize=(8, 6), dpi=400)
+    colors = cycle(['red', 'darkorange', 'green', 'blue', 'yellow', 'purple', 'brown', 'orange'])
     for i, color in zip(range(n_classes), colors):
         plt.plot(recall[i], prec[i], color=color, lw=lw,
                  label='Precision-recall for class {0}  (area = {1:0.2f})'
@@ -91,13 +104,11 @@ def plot_roc(model,Featurespace,classspace,classes,Title1,Title2):
     plt.ylabel('Precision')
     plt.title('Precision-recall to multi-class')
     plt.legend(loc="lower right")
-    plt.savefig(Title2,bbox_inches='tight',dpi=400)
+    plt.savefig(Title2, bbox_inches='tight', dpi=400)
     plt.show()
-    
-    
 
     # y_prob = classifier.predict_proba(X_test)
-    
+
     # macro_roc_auc_ovo = roc_auc_score(y_test, y_prob, multi_class="ovo",
     #                                   average="macro")
     # weighted_roc_auc_ovo = roc_auc_score(y_test, y_prob, multi_class="ovo",
