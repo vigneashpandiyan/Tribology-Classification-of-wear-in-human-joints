@@ -1,9 +1,21 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Mar 29 01:29:30 2021
+Created on Wed Feb  7 21:57:22 2024
 
 @author: srpv
+contact: vigneashwara.solairajapandiyan@empa.ch
+
+
+The codes in this following script will be used for the publication of the following work
+
+"Classification of Progressive Wear on a Multi-Directional Pin-on-Disc 
+Tribometer Simulating Conditions in Human Joints-UHMWPE against CoCrMo 
+Using Acoustic Emission and Machine Learning"
+
+@any reuse of this code should be authorized by the first owner, code author
 """
+# %%
+# Libraries to import
 import torch.nn as nn
 import torch
 from torch.nn import functional as F
