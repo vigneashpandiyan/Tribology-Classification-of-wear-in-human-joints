@@ -18,6 +18,8 @@ Human joint prostheses face wear and related failure mechanisms due to the compl
 
 # Methodology
 
+This study introduced a novel approach for monitoring wear progression in human joint prostheses simulated on a laboratory scale by employing two ML frameworks. The first framework involved manual feature extraction based on human knowledge, while the second framework utilized a contrastive learning-based CNN with circle loss for automated feature extraction. The results showcased significant improvement in wear classification performance achieved through the integration of machine learning techniques compared to manual feature extraction. 
+
 ![image](https://github.com/vigneashpandiyan/Tribology-Classification-of-wear-in-human-joints/assets/39007209/b36043e5-92f6-435c-87a7-c8af5d4f2a79)
 
 # Results
