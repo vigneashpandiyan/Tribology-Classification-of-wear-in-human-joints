@@ -16,6 +16,10 @@ Human joint prostheses face wear and related failure mechanisms due to the compl
 ![1](https://github.com/vigneashpandiyan/Tribology-Classification-of-wear-in-human-joints/assets/39007209/e931ab6f-9b72-4240-b0de-90efb47d619a)
 ![2](https://github.com/vigneashpandiyan/Tribology-Classification-of-wear-in-human-joints/assets/39007209/97f32a33-4a31-4fd9-ae40-eb745dab1d74)
 
+# Methodology
+
+![image](https://github.com/vigneashpandiyan/Tribology-Classification-of-wear-in-human-joints/assets/39007209/b36043e5-92f6-435c-87a7-c8af5d4f2a79)
+
 # Results
 
 ![www_screencapture_com_2024-2-8_12_49-ezgif com-video-to-gif-converter](https://github.com/vigneashpandiyan/Tribology-Classification-of-wear-in-human-joints/assets/39007209/feb80de9-0df2-421d-b308-fb595d945c2c)
