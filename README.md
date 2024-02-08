@@ -25,8 +25,7 @@ The training of ML algorithms is usually supervised. Given a dataset consisting 
 
 # Results
 
-
-![Figure 13](https://github.com/vigneashpandiyan/Additive-Manufacturing-DED-Manifold-Learning/assets/39007209/ea50b4af-3708-4a40-a03e-fc84675c149a)
+![www_screencapture_com_2024-2-8_12_49-ezgif com-video-to-gif-converter](https://github.com/vigneashpandiyan/Tribology-Classification-of-wear-in-human-joints/assets/39007209/feb80de9-0df2-421d-b308-fb595d945c2c)
 
 
 # Code
